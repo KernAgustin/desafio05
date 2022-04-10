@@ -45,6 +45,12 @@
     color: black;
 }
 
+.headerTitulo:hover{
+    transform: scale(1.1);
+    box-shadow: #A341FF 2px 2px;
+    transition: 1s;
+}
+
 .headerNav{
     margin: 1em;
 }
@@ -53,6 +59,12 @@ nav ul li{
     display: inline-block;
     margin: 1em;
     font-weight: bold;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: #A341FF 2px 2px;
 }
 
 .mainTitulo{
@@ -70,6 +82,12 @@ nav ul li{
 
 img{
     border: 2px solid;
+}
+
+img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 3s;
 }
 
 .footer{
