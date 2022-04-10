@@ -1,0 +1,134 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* vista desktop*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "iraProductos iraProductos iraProductos iraProductos"
+        "footer footer footer footer";
+    }
+
+    .header{
+        grid-area: header;
+        background-color: #D1A5FA;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #A341FF;
+    }
+
+    .main{
+        grid-area: main;
+    }
+
+    .iraProductos{ 
+        grid-area: iraProductos;
+        text-align: center;
+    }
+
+    .footer{ 
+        grid-area: footer; 
+    }
+
+.headerInicio{
+    margin: 1.25em;
+    text-decoration: none;
+    color: black;
+}
+
+.headerNav{
+    margin: 1em;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 1em;
+    font-weight: bold;
+}
+
+.mainTitulo{
+    text-align: center;
+    margin: 1em;
+}
+
+.parrafoUno{
+    margin: 3em;
+}
+
+.parrafoDos{
+    margin: 5em 3em;
+}
+
+img{
+    border: 2px solid;
+}
+
+.footer{
+    margin-top: 2em;
+    border-top: 2px solid #A341FF;
+    text-align: center;
+    background-color: #D1A5FA;
+}
+
+footer p{
+    margin: 1em;
+    font-weight: bold;
+}
+
+/* vista tablet*/
+@media only screen and (max-width: 780px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "iraProductos iraProductos iraProductos iraProductos"
+            "footer footer footer footer";
+        }
+    
+        .header{
+            grid-area: header;
+            font-size: 12px;
+        }
+    
+        .main{
+            grid-area: main;
+        }
+    
+        .iraProductos{ 
+            grid-area: iraProductos;
+        }
+    
+        .footer{ 
+            grid-area: footer; 
+        }
+}
+
+/*vista movil*/
+@media only screen and (max-width: 600px){
+    .header{
+        display: inline;
+    }
+
+    .headerTitulo{
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+
+    .headerNav{
+        font-size: 15px;
+        text-align: center;
+    }
+}
